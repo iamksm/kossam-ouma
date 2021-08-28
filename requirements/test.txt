@@ -1,0 +1,7 @@
+-r base.txt
+
+pytest
+tox
+flake8
+coverage
+mock
