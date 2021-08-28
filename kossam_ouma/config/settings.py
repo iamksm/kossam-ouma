@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 
+# import django
+
+# django.setup()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -52,7 +55,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "kossam_ouma.urls"
+ROOT_URLCONF = "kossam_ouma.config.urls"
 
 TEMPLATES = [
     {
@@ -70,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "kossam_ouma.wsgi.application"
+WSGI_APPLICATION = "config.wsgi.application"
 
 
 # Database
@@ -84,6 +87,9 @@ DATABASES = {
         "PASSWORD": "r1r2l1l2",
         "HOST": "127.0.0.1",
         "PORT": "5432",
+        "TEST": {
+            "NAME": "test_db",
+        },
     }
 }
 
