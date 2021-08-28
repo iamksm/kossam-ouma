@@ -1,6 +1,6 @@
 [run]
 source=kossam_ouma
-omit=
+omit=config/*, landing/migrations/**/migrations/*
 branch=True
 
 [report]

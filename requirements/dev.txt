@@ -6,3 +6,6 @@ isort
 pre-commit
 Django
 psycopg2  # (sudo apt install libpq-dev python3.9-dev is a pre-requisite of this)
+make
+Pillow
+django-crispy-forms

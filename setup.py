@@ -1,6 +1,5 @@
 from setuptools import find_packages, setup
 
-
 with open("kossam_ouma/version.py") as version_file:
     exec(version_file.read())
 

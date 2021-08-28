@@ -3,4 +3,13 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("This is Kossam's landing page")
+    context = {"title": "Home"}
+    return render(request, "landing/home.html", context)
+
+
+def about(request):
+    return render(request, "landing/about.html", {"title": "About"})
+
+
+def landing(request):
+    return render(request, "index.html")
