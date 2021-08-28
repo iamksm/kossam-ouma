@@ -1,0 +1,7 @@
+[run]
+source=kossam_ouma
+omit=
+branch=True
+
+[report]
+show_missing=True
